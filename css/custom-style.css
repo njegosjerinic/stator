@@ -5,7 +5,6 @@ html {
 
 body {
   margin: 0;
-  outline: 3px solid red;
 }
 
 .w1000 {
@@ -409,11 +408,13 @@ table a:hover {
   color: #fff;
   margin-bottom: 0.8rem;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .footer a {
   color: #bbb;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .footer a:hover {
@@ -431,7 +432,7 @@ table a:hover {
 }
 
 .footer-column p {
-  height: 100px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -453,6 +454,41 @@ table a:hover {
 
 .zirat-img img {
   width: 50%;
+}
+
+.contact-page {
+  background: #edecf1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 50px 0;
+  font-size: larger;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 20px;
+}
+
+.contact-card {
+  margin-bottom: 20px;
+  line-height: 0.5em;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #5fa0a3;
+}
+
+.address {
+  color: rgb(91, 89, 89);
+}
+
+.position {
+  color: #3d8a8e;
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 @media (max-width: 1080px) and (min-width: 780px) {
@@ -485,10 +521,6 @@ table a:hover {
 
   .content {
     width: 100%;
-  }
-
-  .footer {
-    font-size: medium;
   }
 
   .apartment-extra-images {
@@ -650,10 +682,26 @@ table a:hover {
   }
 
   .footer {
-    padding: 3rem 5rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
-    align-items: start;
+    align-items: center;
     justify-items: start;
+  }
+
+  .footer-column {
+    height: fit-content;
+    width: 80%;
+  }
+
+  .footer-column p {
+    height: fit-content;
+  }
+
+  .footer-column a,
+  li {
+    margin-bottom: 12px;
   }
 
   .apartment-extra-images {
@@ -703,12 +751,38 @@ table a:hover {
     width: 100%;
   }
 
-  .kontakt-content {
+  .contact-page {
     background: #edecf1;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 50px 0 50px 0;
     font-size: larger;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 20px;
+  }
+
+  .contact-card {
+    margin-bottom: 20px;
+    line-height: 0.5em;
+  }
+
+  .contact-card a {
+    text-decoration: none;
+    color: #5fa0a3;
+  }
+
+  .address {
+    color: rgb(91, 89, 89);
+  }
+
+  .position {
+    color: #3d8a8e;
+    font-size: 1.2rem;
+    font-weight: bolder;
   }
 }
