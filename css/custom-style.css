@@ -73,6 +73,10 @@ header {
   padding: 0;
 }
 
+.header-menu li:first-child {
+  display: none;
+}
+
 .menu-item {
   list-style: none;
 }
@@ -181,7 +185,7 @@ footer ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0 100px 0;
+  padding: 0 0 50px 0;
 }
 
 .gradjevinarstvo-wrapper {
@@ -235,7 +239,6 @@ footer ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 50px;
 }
 
 .gradjevinarstvo-text-container p {
@@ -262,13 +265,12 @@ footer ul {
 .arrows {
   font-size: xx-large;
   position: absolute;
-  top: 46%;
+  top: 40%;
   width: 95%;
   left: 3%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  cursor: pointer;
 }
 
 .left-arrow {
@@ -503,7 +505,6 @@ table a:hover {
 .about-title {
   font-size: 20px;
   font-weight: bold;
-  color: #3d8a8e;
   margin-bottom: 50px;
 }
 
@@ -593,6 +594,10 @@ table a:hover {
     gap: 50px;
   }
 
+  .header-menu li:first-child {
+    display: block;
+  }
+
   .image-grid {
     width: 100%;
     justify-content: center;
@@ -645,8 +650,8 @@ table a:hover {
   }
 
   .ana-dot {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
   }
 
   .objekat-ana-title h1 {
@@ -671,6 +676,10 @@ table a:hover {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+
+  .header-menu li:first-child {
+    display: block;
   }
 
   .text-container {
@@ -814,7 +823,6 @@ table a:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
   }
 
   .ana-description-location h3 {
@@ -825,6 +833,7 @@ table a:hover {
     text-align: center;
     font-size: larger;
     padding: 40px 0 40px 0;
+    margin: 0;
   }
 
   .homepage {
