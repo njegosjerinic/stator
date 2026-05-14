@@ -491,6 +491,98 @@ table a:hover {
   font-weight: bolder;
 }
 
+.about-page {
+  background: #edecf1;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 50px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.about-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3d8a8e;
+  margin-bottom: 50px;
+}
+
+.about-section {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto 50px auto;
+  box-sizing: border-box;
+}
+
+.about-heading {
+  color: #3d8a8e;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-section p {
+  font-size: larger;
+  line-height: 1.8;
+  color: #111;
+  margin: 0;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-list li {
+  font-size: larger;
+  line-height: 2.2;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.about-list li::before {
+  content: "— ";
+  color: #3d8a8e;
+  font-weight: bold;
+}
+
+.about-divider {
+  width: 120px;
+  height: 2px;
+  background: #7fc8cd;
+  margin: 0 auto 50px auto;
+}
+
+.about-closing {
+  font-size: larger;
+  line-height: 1.8;
+  color: #111;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 40px 15px;
+  }
+
+  .about-section {
+    width: 100%;
+  }
+
+  .about-section p,
+  .about-list li,
+  .about-closing {
+    font-size: 1rem;
+    line-height: 1.8;
+    word-break: break-word;
+  }
+
+  .about-heading {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 1080px) and (min-width: 780px) {
   .logo-container {
     width: 100%;
