@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   const rightArrow = document.getElementById("rightArrow");
   const leftArrow = document.getElementById("leftArrow");
   const hamburger = document.querySelector(".hamburger");
   const headerMenu = document.querySelector(".header-menu");
+  const carousel = document.querySelector(".ana-caurousel");
   let anaCarouselItems = document.querySelectorAll(".ana-carousel-item");
   let caoruselDots = document.querySelectorAll(".ana-dot");
 
   let currentIndex = 0;
+  let startX = 0;
+  let endX = 0;
 
   function showSlides(index) {
     if (index >= anaCarouselItems.length) index = 0;
@@ -31,15 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     currentIndex = index;
   }
 
-	for (let i = 0; i < caoruselDots.length; i++) {
-  caoruselDots[i].addEventListener("click", function () {
-	  console.log(currentIndex);
-    showSlides(i);
-	  
-  });
-		console.log(currentIndex);
-}
-	
   if (rightArrow) {
     rightArrow.addEventListener("click", () => {
       showSlides(currentIndex + 1);
@@ -57,6 +50,23 @@ document.addEventListener("DOMContentLoaded", function () {
       showSlides(i);
     });
   }
+  if (carousel) {
+    carousel.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener("touchend", (e) => {
+      endX = e.changedTouches[0].clientX;
+
+      if (startX - endX > 50) {
+        showSlides(currentIndex + 1);
+      }
+
+      if (endX - startX > 50) {
+        showSlides(currentIndex - 1);
+      }
+    });
+  }
 
   showSlides(0);
 
@@ -66,5 +76,4 @@ document.addEventListener("DOMContentLoaded", function () {
       headerMenu.classList.toggle("active");
     });
   }
-
 });

@@ -26,6 +26,7 @@
                 </a>
             </div>
             <ul class="header-menu">
+                <li class="menu-item"><a href="<?php echo site_url() ?>">Početna</a></li>
                 <li class="menu-item"><a href="<?php echo site_url('o-nama') ?>">O nama</a></li>
                 <li class="menu-item"><a href="<?php echo site_url('/kontakt') ?>">Kontakt</a></li>
                 <li class="menu-item"><a href="<?php echo site_url('/gradjevinarstvo') ?>">Gradjevinarstvo</a></li>
