@@ -9,26 +9,30 @@ get_header();
         <div class="gradjevinarstvo-title">
             <h2>Stambeni objekat ANA Doboj</h2>
         </div>
-        <a href="<?php echo site_url('objekat-ana-lamela-1') ?>" class="gradj-cont">
-            <img src="https://statorgs.com/wp-content/uploads/2026/03/ana-1.png" alt="Ana Objekt">
-        </a>
-        <a href="<?php echo site_url('objekat-ana-lamela-2') ?>" class="gradj-cont">
-            <img src="https://statorgs.com/wp-content/uploads/2026/03/ana-2.png" alt="Ana Objekt">
-        </a>
-        <a href="#" class="gradj-cont">
-            <img src="https://statorgs.com/wp-content/uploads/2026/03/spo-milica.png" alt="Ana Objekt">
-        </a>
-        <a href="#" class="gradj-cont">
-            <img src="https://statorgs.com/wp-content/uploads/2026/03/spo-stator.png" alt="Ana Objekt">
-        </a>
+        <div class="zgrade-wrapper">
+            <a href="<?php echo site_url('objekat-ana-lamela-1') ?>" class="gradj-cont">
+                <img src="https://statorgs.com/wp-content/uploads/2026/03/ana-1.png" alt="Ana Objekt">
+            </a>
+            <a href="<?php echo site_url('objekat-ana-lamela-2') ?>" class="gradj-cont">
+                <img src="https://statorgs.com/wp-content/uploads/2026/03/ana-2.png" alt="Ana Objekt">
+            </a>
+            <a href="#" class="gradj-cont">
+                <img src="https://statorgs.com/wp-content/uploads/2026/03/spo-milica.png" alt="Ana Objekt">
+            </a>
+            <a href="#" class="gradj-cont">
+                <img src="https://statorgs.com/wp-content/uploads/2026/03/spo-stator.png" alt="Ana Objekt">
+            </a>
+        </div>
         <div class="gradjevinarstvo-text-container " class="gradj-cont">
             <p>U toku je prodaja stanova u izgradnji, pogledajte ponudu stanova u stambenom objektu "ANA" u ulici Nikole
                 Tesle u Doboju</p>
         </div>
         <div class="ana-caurousel">
-            <div class="arrows ">
-                <div id="rightArrow" class="right-arrow">&#62;</div>
-                <div id="leftArrow" class="left-arrow">&#60;</div>
+            <div class="arrows-container">
+                <div class="arrows ">
+                    <div id="rightArrow" class="right-arrow">&#62;</div>
+                    <div id="leftArrow" class="left-arrow">&#60;</div>
+                </div>
             </div>
             <div class="ana-carousel-item" style="display:block;">
                 <img src="<?php echo get_theme_file_uri('images/ana.jpg'); ?>" alt="Ana Objekt">

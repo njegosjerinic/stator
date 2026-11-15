@@ -34,13 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (rightArrow) {
-    rightArrow.addEventListener("click", () => {
+    rightArrow.addEventListener("click", (e) => {
+      e.stopPropagation;
+
       showSlides(currentIndex + 1);
     });
   }
 
   if (leftArrow) {
-    leftArrow.addEventListener("click", () => {
+    leftArrow.addEventListener("click", (e) => {
+      e.stopPropagation;
       showSlides(currentIndex - 1);
     });
   }
